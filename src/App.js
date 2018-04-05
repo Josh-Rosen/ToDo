@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import AddTodo from './components/AddTodo';
+import VisibleTodoList from './components/VisibleTodoList';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -8,11 +11,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">ToDo</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
       </div>
     );
   }
